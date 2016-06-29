@@ -11,7 +11,7 @@
     <button style="margin: 30px" type="button" ng-click="getLotteryResults()">Generate Lottery Number Set</button>
     <div style="margin: 10px" ng-repeat="n in lotteryResults">
         <div class="circle"  ng-style="{'background-color':n.HexColour}">
-           {{n.Number}}
+            <span ng-bind="n.Number"></span>           
         </div>
         
     </div>

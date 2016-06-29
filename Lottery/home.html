@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="lotteryGeneratorModule">
+<head>
+    <title>Lottery Generator</title>
+	<meta charset="utf-8" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body ng-controller="lotteryGeneratorController">
+    <button style="margin: 30px" type="button" ng-click="getLotteryResults()">Generate Lottery Number Set</button>
+    <div style="margin: 10px" ng-repeat="n in lotteryResults">
+        <div class="circle"  ng-style="{'background-color':n.HexColour}">
+           {{n.Number}}
+        </div>
+        
+    </div>
+    
+    <script src="../Scripts/angular.js"></script>
+    <script src="../app/app.js"></script>
+</body>
+</html>

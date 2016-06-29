@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery", "Lottery\Lottery.csproj", "{49173197-F521-496C-9D63-F272E5B35606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery.Tests", "Lottery.Tests\Lottery.Tests.csproj", "{EA14F023-99AD-44F2-89AB-06E40604393D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{808ADE30-CC63-4068-9B5D-145F9939F850}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{5C80D074-1C12-4772-A769-85BB32DB7518}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{B2A052EB-871F-4C40-B2EF-F02BC806C928}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\Lottery.json = PublishScripts\Templates\Lottery.json
+		PublishScripts\Templates\Lottery.param.dev.json = PublishScripts\Templates\Lottery.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49173197-F521-496C-9D63-F272E5B35606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49173197-F521-496C-9D63-F272E5B35606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49173197-F521-496C-9D63-F272E5B35606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49173197-F521-496C-9D63-F272E5B35606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA14F023-99AD-44F2-89AB-06E40604393D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA14F023-99AD-44F2-89AB-06E40604393D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA14F023-99AD-44F2-89AB-06E40604393D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA14F023-99AD-44F2-89AB-06E40604393D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C80D074-1C12-4772-A769-85BB32DB7518} = {808ADE30-CC63-4068-9B5D-145F9939F850}
+		{B2A052EB-871F-4C40-B2EF-F02BC806C928} = {808ADE30-CC63-4068-9B5D-145F9939F850}
+	EndGlobalSection
+EndGlobal
